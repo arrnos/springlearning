@@ -1,0 +1,9 @@
+# ignore .pyc file
+*.pyc
+.mvn/timing.properties
+*.class
+*.log
+*.iml
+*/.idea/
+*/target/
+*/DS_Store
