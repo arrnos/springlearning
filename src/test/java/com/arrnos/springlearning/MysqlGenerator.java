@@ -16,7 +16,7 @@ public class MysqlGenerator {
 
     private static final String PACKAGE_NAME = "com.arrnos.springlearning";
     private static final String MODULE_NAME = "module1";
-    private static final String OUT_PATH = "D:\\develop\\code";
+    private static final String OUT_PATH = "E:\\Project\\springlearning\\src\\main\\java\\com\\arrnos\\springlearning";
     private static final String AUTHOR = "arrnos";
 
     private static final String DRIVER = "com.mysql.jdbc.Driver";
@@ -45,10 +45,10 @@ public class MysqlGenerator {
                         .setAuthor(AUTHOR)
                         // 自定义文件命名，注意 %s 会自动填充表实体属性！
                         .setXmlName("%sMapper")
-                        .setMapperName("%sDao")
+                        .setMapperName("%sMapper")
                         .setServiceName("I%sService")
                         .setServiceImplName("%sServiceImpl")
-                        .setControllerName("%sController")
+//                        .setControllerName("%sController")
         ).setDataSource(
                 // 数据源配置
                 new DataSourceConfig().setDbType(DbType.MYSQL)// 数据库类型
@@ -103,9 +103,9 @@ public class MysqlGenerator {
                                 .setParent(PACKAGE_NAME)// 自定义包路径
 //                                .setModuleName(MODULE_NAME)
                                 .setController("controller")// 这里是控制器包名，默认 web
-                                .setXml("mapper")
+//                                .setXml("mapper")
                                 .setMapper("mapper")
-                                .setXml("mapperXml")
+                                .setService("service")
                 ).setCfg(
                         // 注入自定义配置，可以在 VM 中使用 cfg.abc 设置的值
                         new InjectionConfig() {
