@@ -16,7 +16,7 @@ public class MysqlGenerator {
 
     private static final String PACKAGE_NAME = "com.arrnos.springlearning";
     private static final String MODULE_NAME = "module1";
-    private static final String OUT_PATH = "E:\\Project\\springlearning\\src\\main\\java\\com\\arrnos\\springlearning";
+    private static final String OUT_PATH = "E:\\Project\\springlearning\\src\\main\\java";
     private static final String AUTHOR = "arrnos";
 
     private static final String DRIVER = "com.mysql.jdbc.Driver";
