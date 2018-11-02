@@ -11,44 +11,27 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 
+ * <p>
  * </p>
  *
  * @author arrnos
  * @since 2018-11-01
  */
 @Data
-@Accessors(chain = true)
 public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
 
-    /**
-     * 主键ID
-     */
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
-    /**
-     * 姓名
-     */
     @TableField("NAME")
     private String name;
-    /**
-     * 年龄
-     */
     private Integer age;
-    /**
-     * 邮箱
-     */
     private String email;
 
-
     public static final String ID = "id";
-
     public static final String NAME = "NAME";
-
     public static final String AGE = "age";
-
     public static final String EMAIL = "email";
 
     @Override
